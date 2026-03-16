@@ -1,5 +1,5 @@
 <template>
-  <section id="pricing" class="pricing">
+  <section id="pricing" class="pricing" aria-label="Pricing plans">
     <div class="pricing__container">
       <h2 class="pricing__title">Choose A Plan That Works For You</h2>
 
@@ -11,7 +11,7 @@
           <div v-if="plan.popular" class="pricing__badge">Popular</div>
 
           <!-- Icon -->
-          <img src="/images/GreenSun.png" alt="" class="pricing__icon" />
+          <img src="/images/GreenSun.png" alt="" class="pricing__icon" loading="lazy" />
 
           <!-- Plan name -->
           <p class="pricing__plan-name">{{ plan.name }}</p>
@@ -50,7 +50,7 @@
         <button
           v-for="(_, i) in plans"
           :key="i"
-          class="pricing__dot"
+          class="pricing__dot" :aria-label="`Go to slide ${i + 1}`"
           :class="{ 'pricing__dot--active': activeIndex === i }"
           @click="scrollTo(i)"
         />

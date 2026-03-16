@@ -1,5 +1,5 @@
 <template>
-  <section class="features">
+  <section class="features" aria-label="Features">
     <div class="features__header">
       <h2 class="features__title">Features</h2>
       <p class="features__subtitle">
@@ -26,7 +26,7 @@
             :style="{ left: (feat.cx + 60 - 40) + 'px', top: '0px' }"
           >
             <div class="features__icon-circle">
-              <img :src="feat.img" :alt="feat.label" class="features__icon-img" />
+              <img :src="feat.img" :alt="feat.label" class="features__icon-img" loading="lazy" />
             </div>
             <span class="features__icon-label">{{ feat.label }}</span>
           </div>
@@ -36,7 +36,7 @@
             :style="{ left: (feat.cx + 60 - 40) + 'px', top: '190px' }"
           >
             <div class="features__icon-circle">
-              <img :src="feat.img" :alt="feat.label" class="features__icon-img" />
+              <img :src="feat.img" :alt="feat.label" class="features__icon-img" loading="lazy" />
             </div>
             <span class="features__icon-label">{{ feat.label }}</span>
           </div>

@@ -1,5 +1,5 @@
 <template>
-  <section class="comparison">
+  <section class="comparison" aria-label="Why Intelli Toggle comparison">
     <div class="comparison__container">
       <h2 class="comparison__title">Why Intelli Toggle?</h2>
 
@@ -17,16 +17,16 @@
             <tr v-for="row in rows" :key="row.label" class="comparison__row">
               <td class="comparison__label">{{ row.label }}</td>
               <td class="comparison__cell comparison__cell--it">
-                <img v-if="row.it === true"  src="/images/black_Check.png" class="comparison__icon" alt="Yes" />
-                <img v-else                  src="/images/black_X.png"     class="comparison__icon" alt="No"  />
+                <img v-if="row.it === true"  src="/images/black_Check.png" class="comparison__icon" alt="Yes" loading="lazy" />
+                <img v-else                  src="/images/black_X.png"     class="comparison__icon" alt="No"  loading="lazy" />
               </td>
               <td class="comparison__cell comparison__cell--ld">
-                <img v-if="row.ld === true"  src="/images/black_Check.png" class="comparison__icon" alt="Yes" />
-                <img v-else                  src="/images/black_X.png"     class="comparison__icon" alt="No"  />
+                <img v-if="row.ld === true"  src="/images/black_Check.png" class="comparison__icon" alt="Yes" loading="lazy" />
+                <img v-else                  src="/images/black_X.png"     class="comparison__icon" alt="No"  loading="lazy" />
               </td>
               <td class="comparison__cell comparison__cell--fs">
-                <img v-if="row.fs === true"  src="/images/black_Check.png" class="comparison__icon" alt="Yes"     />
-                <img v-else-if="row.fs === false" src="/images/black_X.png" class="comparison__icon" alt="No"     />
+                <img v-if="row.fs === true"  src="/images/black_Check.png" class="comparison__icon" alt="Yes"     loading="lazy" />
+                <img v-else-if="row.fs === false" src="/images/black_X.png" class="comparison__icon" alt="No"     loading="lazy" />
                 <span v-else class="comparison__limited">{{ row.fs }}</span>
               </td>
             </tr>

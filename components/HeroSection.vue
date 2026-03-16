@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" aria-label="Hero">
     <!-- Background glow blobs -->
     <div class="hero__blob hero__blob--right"></div>
     <div class="hero__blob hero__blob--left"></div>
@@ -28,11 +28,11 @@
       <p class="hero__trust-label">Trusted by various engineering teams</p>
 
       <div class="hero__logos">
-        <img src="/images/google-cloud.svg"  alt="Google Cloud"        />
-        <img src="/images/aws.svg"            alt="Amazon Web Services" />
-        <img src="/images/azure.svg"          alt="Microsoft Azure"     />
-        <img src="/images/digitalocean.svg"   alt="Digital Ocean"       />
-        <img src="/images/ibm.svg"            alt="IBM"                 />
+        <img src="/images/logo-google-cloud.svg"  alt="Google Cloud"        loading="lazy" />
+        <img src="/images/logo-aws.svg"            alt="Amazon Web Services" loading="lazy" />
+        <img src="/images/logo-azure.svg"          alt="Microsoft Azure"     loading="lazy" />
+        <img src="/images/logo-digitalocean.svg"   alt="Digital Ocean"       loading="lazy" />
+        <img src="/images/logo-ibm.svg"            alt="IBM"                 loading="lazy" />
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <template>
-  <section class="use-cases">
+  <section class="use-cases" aria-label="Use Cases">
     <div class="use-cases__container">
       <h2 class="use-cases__title">Use Cases</h2>
 
@@ -7,7 +7,7 @@
       <div class="use-cases__track" ref="track" @scroll="onScroll">
         <div v-for="card in cases" :key="card.title" class="use-cases__card">
           <div class="use-cases__image-wrap">
-            <img :src="card.img" :alt="card.title" class="use-cases__image" />
+            <img :src="card.img" :alt="card.title" class="use-cases__image" loading="lazy" />
           </div>
           <div class="use-cases__text">
             <p class="use-cases__card-title">{{ card.title }}</p>

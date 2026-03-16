@@ -1,10 +1,10 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" aria-label="Site footer">
     <div class="footer__container">
 
       <!-- Brand column -->
       <div class="footer__brand">
-        <img src="/images/logo-dark.svg" alt="Intelli Toggle" class="footer__logo" />
+        <img src="/images/logo-dark.svg" alt="Intelli Toggle" class="footer__logo" loading="lazy" />
         <p class="footer__desc">
           Intelli Toggle is built by AORTEM, a company focused on powering
           scalable, multi-platform developer tools.

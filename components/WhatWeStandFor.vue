@@ -1,5 +1,5 @@
 <template>
-  <section class="stand-for">
+  <section class="stand-for" aria-label="What We Stand For">
     <div class="stand-for__container">
       <h2 class="stand-for__title">What We Stand For</h2>
       <p class="stand-for__subtitle">The modern feature flag platform for product teams and developers.</p>
