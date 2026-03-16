@@ -1,75 +1,34 @@
-# Nuxt Minimal Starter
+# intellitoggle3
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Clone of the IntelliToggle landing page. Built with Nuxt 3 and Vue 3.
 
-## Setup
+**Live site:** https://intellitoggle3.vercel.app
 
-Make sure to install dependencies:
+---
+
+## Stack
+
+- Nuxt 3 / Vue 3
+- Tailwind CSS
+- Google Fonts (Merriweather Sans, Plus Jakarta Sans, Inter, Roboto)
+
+## Running locally
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Notes
 
-Build the application for production:
+The original design is built for a fixed 1440px desktop layout, so a big part of this project was figuring out how to make it responsive without rebuilding everything from scratch.
 
-```bash
-# npm
-npm run build
+On desktop it stays close to the Figma — fixed-width containers centered with `margin: auto`. On mobile, sections like Pricing, Use Cases, and What We Stand For become swipe carousels using CSS scroll-snap (no libraries). Features swaps the zigzag diagram for a simple 3-column icon grid since the diagram doesn't scale down well.
 
-# pnpm
-pnpm build
+A few things I'd do differently with more time:
+- Rebuild the layout with CSS Grid so nothing relies on fixed pixel widths
+- Add scroll-triggered animations on section entry
+- Convert the PNG icons to SVG for sharper rendering
+- The Segoe UI font only renders correctly on Windows — would swap it out for something on Google Fonts
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+See `/pixelay/notes.md` for the full alignment breakdown.
