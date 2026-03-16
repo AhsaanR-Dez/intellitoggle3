@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; background: #FFFDFF; -webkit-font-smoothing: antialiased; }
+  body { font-family: 'Merriweather Sans', sans-serif; color: #131313; background: #FFFDFF; overflow-x: hidden; }
+  a { text-decoration: none; }
+  button { cursor: pointer; font-family: inherit; }
+}
