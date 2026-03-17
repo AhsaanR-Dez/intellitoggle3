@@ -28,11 +28,11 @@
       <p class="hero__trust-label">Trusted by various engineering teams</p>
 
       <div class="hero__logos">
-        <img src="/images/logo-google-cloud.svg"  alt="Google Cloud"        loading="lazy" />
-        <img src="/images/logo-aws.svg"            alt="Amazon Web Services" loading="lazy" />
-        <img src="/images/logo-azure.svg"          alt="Microsoft Azure"     loading="lazy" />
-        <img src="/images/logo-digitalocean.svg"   alt="Digital Ocean"       loading="lazy" />
-        <img src="/images/logo-ibm.svg"            alt="IBM"                 loading="lazy" />
+        <img src="/images/google-cloud.svg"  alt="Google Cloud"        loading="lazy" />
+        <img src="/images/aws.svg"            alt="Amazon Web Services" loading="lazy" />
+        <img src="/images/azure.svg"          alt="Microsoft Azure"     loading="lazy" />
+        <img src="/images/digitalocean.svg"   alt="Digital Ocean"       loading="lazy" />
+        <img src="/images/ibm.svg"            alt="IBM"                 loading="lazy" />
       </div>
     </div>
   </section>
