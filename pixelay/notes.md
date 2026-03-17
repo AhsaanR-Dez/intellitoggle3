@@ -4,7 +4,7 @@
 
 Pretty close overall. The hero, nav, pricing cards, and footer all line up well with the original.
 
-The main offset is in the Features section — the zigzag diagram positions icons using coordinates taken directly from the SVG path data, so it's accurate but the vertical spacing between it and the sections above/below is slightly off (~10px).
+The main offset is in the Features section — the zigzag diagram positions icons using coordinates taken directly from the SVG path data, so it's accurate but the vertical spacing between it and the sections above/below is slightly off                              .
 
 The comparison table headers are a touch smaller than the original since I used `clamp()` to make them scale, which shrinks them slightly at 1440px.
 
